@@ -91,6 +91,7 @@ This stack was chosen with the following goals in mind:
 │   └── index.html.jinja2   # Index template
 ├── pyproject.toml          # Poetry configuration file
 ├── poetry.lock             # Poetry lock file
+├── docker-compose.yml      # Docker Compose configuration file
 └── README.md               # Project README file
 ```
 
