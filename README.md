@@ -6,6 +6,8 @@ This project is a web application built using FastAPI for the backend and Jinja2
 ## Features
 - **FastAPI**: A modern, fast (high-performance), web framework for building APIs with Python 3.8+.
 - **Jinja2**: A full-featured template engine for Python, used for rendering HTML templates.
+- **BulmaCSS**: A modern CSS framework based on Flexbox (via CDN).
+- **jQuery**: A fast, small, and feature-rich JavaScript library (via CDN).
 - **Dependency Management**: Managed using Poetry, a tool for dependency management and packaging in Python.
 
 ## Project Structure
