@@ -3,6 +3,15 @@
 This project enables **AI-assisted rapid prototyping** of web applications using FastAPI and Jinja2,
 allowing developers to explore and iterate on ideas quickly to get a working prototype.
 
+## Idea / Goal of the Prototype
+We website that generates / plays background noise for programmers, customizable with sliders and knobs
+
+## Problem Statement
+As a programmer, I don't want to listen to music because it is too distracting
+
+## Scope and Limitations
+Noise should be generated in the browser. Parameters should be adjustable with sliders
+
 ## Prerequisites
 For this project, you need to have the following installed:
 - [Docker](https://www.docker.com/)
@@ -17,10 +26,33 @@ First, you need to clearly define the idea you'd like to explore, the problem
 you're trying to solve, and the scope of the prototype. For example:
 
 ```shell
-pilot run initialize
+➜ pilot run initialize
+> Short idea description: We website that generates / plays background noise for programmers, customizable with sliders and knobs
+> Problem statement: As a programmer, I don't want to listen to music because it is too distracting 
+> Scope and limitations: Noise should be generated in the browser. Parameters should be adjustable with sliders
+                                                                                                    
+  The project has been initialized with the following changes:                                      
+                                                                                                    
+   1 Updated .pilot-hints.md: Added the user story, problem statement, and scope of the prototype.  
+   2 Updated README.md: Included the project details, idea, problem statement, and scope.           
+   3 Removed prompts/initialize.md.jinja2: Deleted the initialization prompt file.                  
+   4 Updated index.html.jinja2: Implemented a simple background noise generator with adjustable     
+     volume and frequency sliders.                                                                  
+                                                                                                    
+  The initial implementation includes a basic UI with sliders for volume and frequency, and         
+  buttons to play and stop the noise. The noise generation is handled using the Web Audio API.      
+                                                                                                    
+  This setup provides a starting point for further development and customization of the background  
+  noise generator.      
 ```
 
 This will set up the project with the necessary details and an initial implementation.
+You can review the changes in the pull request the assistant creates for you:
+
+```shell
+➜ pilot pr 
+✔ Branch create-noise-generator has PR #1
+```
 
 ### Build
 Once your project is initialized, you can use PR Pilot to make changes to the project:
