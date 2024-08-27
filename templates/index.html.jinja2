@@ -3,5 +3,54 @@
 {% block title %}Home{% endblock %}
 
 {% block content %}
-    <h2>This is the home page.</h2>
+    <h2>Background Noise Generator</h2>
+    <div>
+        <label for="volume">Volume:</label>
+        <input type="range" id="volume" name="volume" min="0" max="100" value="50">
+    </div>
+    <div>
+        <label for="frequency">Frequency:</label>
+        <input type="range" id="frequency" name="frequency" min="20" max="20000" value="440">
+    </div>
+    <div>
+        <button id="playButton">Play</button>
+        <button id="stopButton">Stop</button>
+    </div>
+
+    <script>
+        let audioContext = new (window.AudioContext || window.webkitAudioContext)();
+        let oscillator = null;
+
+        document.getElementById('playButton').addEventListener('click', function() {
+            if (!oscillator) {
+                oscillator = audioContext.createOscillator();
+                oscillator.type = 'white';
+                oscillator.frequency.setValueAtTime(document.getElementById('frequency').value, audioContext.currentTime);
+                oscillator.connect(audioContext.destination);
+                oscillator.start();
+            }
+        });
+
+        document.getElementById('stopButton').addEventListener('click', function() {
+            if (oscillator) {
+                oscillator.stop();
+                oscillator.disconnect();
+                oscillator = null;
+            }
+        });
+
+        document.getElementById('volume').addEventListener('input', function() {
+            if (oscillator) {
+                let gainNode = audioContext.createGain();
+                gainNode.gain.setValueAtTime(this.value / 100, audioContext.currentTime);
+                oscillator.connect(gainNode).connect(audioContext.destination);
+            }
+        });
+
+        document.getElementById('frequency').addEventListener('input', function() {
+            if (oscillator) {
+                oscillator.frequency.setValueAtTime(this.value, audioContext.currentTime);
+            }
+        });
+    </script>
 {% endblock %}
