@@ -89,9 +89,10 @@ This stack was chosen with the following goals in mind:
 ├── templates/              # Directory for Jinja2 templates
 │   ├── base.html.jinja2    # Base template
 │   └── index.html.jinja2   # Index template
-├── pyproject.toml          # Poetry configuration file
-├── poetry.lock             # Poetry lock file
 ├── docker-compose.yml      # Docker Compose configuration file
+├── Dockerfile              # Dockerfile for building the app's container image
+├── requirements.txt        # Python dependencies
+├── LICENSE                 # License file
 └── README.md               # Project README file
 ```
 
