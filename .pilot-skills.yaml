@@ -1,0 +1,9 @@
+- title: Add a new page
+  args:
+    purpose: What the page does
+    path: URL path of the page
+  instructions: |
+    Add a new page to the project by doing the following:
+    1. Read `templates/index.html.jinja2` to understand how templates are used in this project
+    2. Create a new Jinja template in the `templates` directory, implementing the new page
+    3. Add the new endpoint in the backend, rendering the jinja template
