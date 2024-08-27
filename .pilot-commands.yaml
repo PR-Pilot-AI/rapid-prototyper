@@ -1,0 +1,15 @@
+commands:
+- description: Define project scope and initial code
+  name: initialize
+  params:
+    cheap: false
+    code: false
+    debug: false
+    direct: false
+    file: prompts/initialize.md.jinja2
+    model: gpt-4o
+    snap: false
+    spinner: true
+    sync: true
+    verbose: true
+    wait: true
