@@ -3,23 +3,17 @@
 This project enables **AI-assisted rapid prototyping** of web applications using FastAPI and Jinja2,
 allowing developers to explore and iterate on ideas quickly to get a working prototype.
 
-## Idea / Goal of the Prototype
-We website that generates / plays background noise for programmers, customizable with sliders and knobs
-
-## Problem Statement
-As a programmer, I don't want to listen to music because it is too distracting
-
-## Scope and Limitations
-Noise should be generated in the browser. Parameters should be adjustable with sliders
-
 ## Prerequisites
 For this project, you need to have the following installed:
 - [Docker](https://www.docker.com/)
 - [PR Pilot CLI](https://github.com/PR-Pilot-AI/pr-pilot-cli)
+- A [Vercel](https://vercel.com/) account for deployment
 
 ## How it Works
 AI assistance is provided by the [PR Pilot platform](https://www.pr-pilot.ai). Any changes to this project
 can be made using natural language prompts using the [PR Pilot CLI](https://github.com/PR-Pilot-AI/pr-pilot-cli).
+
+You can start the app with `docker-compose up` and access it at [http://localhost:8000](http://localhost:8000).
 
 ### Plan
 First, you need to clearly define the idea you'd like to explore, the problem 
