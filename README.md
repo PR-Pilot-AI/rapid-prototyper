@@ -3,7 +3,7 @@
 This project enables **AI-assisted rapid prototyping** of web applications, 
 allowing developers to explore and iterate on ideas quickly to evaluate its potential for success.
 
-## The Approach
+## 🚀 The Approach
 
 The approach is inspired by [Pieter Levels](https://x.com/levelsio) and his book 
 [The Indie Maker Handbook](https://readmake.com/) and it goes like this:
@@ -18,30 +18,30 @@ The approach is inspired by [Pieter Levels](https://x.com/levelsio) and his book
 This project is an opinionated implementation of this approach using technologies / libraries 
 that are ideal for rapid prototyping.
 
-## How to Use
+## 🛠️ How to Use
 The entire process is **AI-assisted using the [PR Pilot platform](https://www.pr-pilot.ai)**, letting you
 develop your prototype using natural language prompts.
 
 
-#### Prerequisites
+#### 📋 Prerequisites
 For this project, you need to have the following installed:
 - [Docker](https://www.docker.com/)
 - [PR Pilot CLI](https://github.com/PR-Pilot-AI/pr-pilot-cli)
 - A [Vercel](https://vercel.com/) account for deployment
 
-#### Running the App
+#### 🏃‍♂️ Running the App
 
 Once you've forked this repository, you can start the app with `docker-compose up` and access it at [http://localhost:8000](http://localhost:8000).
 At this point, it is just an empty placeholder.
 
 
-### Idea
+### 💡 Idea
 First, you need to clearly define the idea you'd like to explore, the problem 
 you're trying to solve, and the scope of the prototype. For example:
 
 ```shell
 ➜ pilot run initialize
-> Short idea description: We website that generates / plays background noise for programmers, customizable with sliders and knobs
+> Short idea description: A website that generates / plays background noise for programmers, customizable with sliders and knobs
 > Problem statement: As a programmer, I don't want to listen to music because it is too distracting 
 > Scope and limitations: Noise should be generated in the browser. Parameters should be adjustable with sliders
                                                                                                     
@@ -68,7 +68,7 @@ You can review the changes in the pull request the assistant creates for you:
 ✔ Branch create-noise-generator has PR #1
 ```
 
-### Build & Iterate
+### 🔄 Build & Iterate
 Once your project is initialized, you can use PR Pilot to make changes to the project:
 
 ```shell
@@ -92,7 +92,7 @@ Once your project is initialized, you can use PR Pilot to make changes to the pr
 
 Check out the [PR Pilot documentation](https://docs.pr-pilot.ai) to learn more about how to use the platform for your projects.
 
-### Ship
+### 🚢 Ship
 
 To find out if people actually want to use what you're building and get feedback, you need to ship it.
 Vercel makes it super easy to deploy your projects with a single command:
@@ -114,7 +114,7 @@ Vercel CLI 34.3.1
 
 Your app is now **LIVE**! Share this link with your potential users and collect feedback right away!
 
-### Evaluate
+### 📊 Evaluate
 Now that your app is live, you'll want to know more about how users are interacting with it.
 Vercel provides analytics and insights to help you understand your users better.
 Just [enable Analytics](https://vercel.com/d?to=%2F%5Bteam%5D%2F%5Bproject%5D%2Fanalytics&title=Open+Web+Analytics) 
@@ -123,7 +123,10 @@ in your dashboard to get started.
 ![Vercel Analytics Screenshot](analytics_screenshot.png)
 ![Vercel Analytics Screenshot](analytics_screenshot2.png)
 
-## Technologies Used
+### 🚀 Grow & Monetize
+TODO: Let PR Pilot generate texts for product hunt, etc
+
+## 🧰 Technologies Used
 We chose the following technologies for this project:
 
 - **FastAPI**: A modern, fast (high-performance), web framework for building APIs with Python 3.8+.
@@ -138,7 +141,7 @@ This stack was chosen with the following goals in mind:
 - **Simplicity**: You shouldn't have to worry about complex configurations or setups.
 - **Popularity**: These technologies are widely used and have a large community, making it easier to find help and resources.
 
-## Project Structure
+## 🗂️ Project Structure
 ```
 .
 ├── app.py                  # The main FastAPI application
@@ -152,8 +155,8 @@ This stack was chosen with the following goals in mind:
 └── README.md               # Project README file
 ```
 
-## Contributing
+## 🤝 Contributing
 Contributions are welcome! Please open an issue or submit a pull request for any changes.
 
-## License
+## 📜 License
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
