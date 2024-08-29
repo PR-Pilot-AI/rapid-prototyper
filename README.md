@@ -22,16 +22,14 @@ that are ideal for rapid prototyping.
 The entire process is **AI-assisted using the [PR Pilot platform](https://www.pr-pilot.ai)**, letting you
 develop your prototype using natural language prompts.
 
-
-#### 📋 Prerequisites
-For this project, you need to have the following installed:
+### 📋 0 - Setup
+For this project, you need to have the following:
 - [Docker](https://www.docker.com/)
 - [PR Pilot CLI](https://github.com/PR-Pilot-AI/pr-pilot-cli)
 - A [Vercel](https://vercel.com/) account for deployment
 
-#### 🏃‍♂️ Running the App
-
-Once you've forked this repository, you can start the app with `docker-compose up` and access it at [http://localhost:8000](http://localhost:8000).
+First, [create a new repository from this template](https://github.com/new?template_name=rapid-prototyper&template_owner=PR-Pilot-AI).
+Then, you can start the app with `docker-compose up` and access it at [http://localhost:8000](http://localhost:8000).
 At this point, it is just an empty placeholder.
 
 
