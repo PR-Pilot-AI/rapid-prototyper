@@ -35,8 +35,8 @@ Once you've forked this repository, you can start the app with `docker-compose u
 At this point, it is just an empty placeholder.
 
 
-### 💡 Idea
-First, you need to clearly define the idea you'd like to explore, the problem 
+### 💡 1 - Idea
+First, you need to **clearly define the idea** you'd like to explore, the problem 
 you're trying to solve, and the scope of the prototype. For example:
 
 ```shell
@@ -68,8 +68,8 @@ You can review the changes in the pull request the assistant creates for you:
 ✔ Branch create-noise-generator has PR #1
 ```
 
-### 🔄 Build & Iterate
-Once your project is initialized, you can use PR Pilot to make changes to the project:
+### 🔄 2 - Build & Iterate
+Once your project is initialized, you can **use PR Pilot to make changes** to the project:
 
 ```shell
 ➜ git:(main) pilot task "The noise is very simple. Make it more complex and add sliders so I can adjust the sound"
@@ -92,10 +92,10 @@ Once your project is initialized, you can use PR Pilot to make changes to the pr
 
 Check out the [PR Pilot documentation](https://docs.pr-pilot.ai) to learn more about how to use the platform for your projects.
 
-### 🚢 Ship
+### 🚢 3 - Ship
 
 To find out if people actually want to use what you're building and get feedback, you need to ship it.
-Vercel makes it super easy to deploy your projects with a single command:
+Vercel makes it super easy to **deploy your projects with a single command**:
 
 ```shell
 ➜  code-noise git:(main) vercel
@@ -114,17 +114,54 @@ Vercel CLI 34.3.1
 
 Your app is now **LIVE**! Share this link with your potential users and collect feedback right away!
 
-### 📊 Evaluate
+### 🚀 4 - Grow & Monetize
+Spreading the word on social media, forums, and communities can help you grow your user base,
+but is very time-consuming. Let PR Pilot do the heavy lifting for you.
+
+Just run: `pilot run marketing-materials`
+
+PR Pilot will ask you a few questions and **generate marketing materials tailored to different platforms and audiences**:
+
+```shell
+➜ pilot run marketing-materials
+> Project url: https://code-noise.vercel.app
+> Maker name: Marco Lamina
+> Why i built it: I'm sensitive to sound and needed the an easy way to create the perfect ambience for doing deep work
+                                                                                             
+✔ Write content to marketing/reddit.md                                                                                                    
+✔ Add Reddit marketing materials                                                                                                          
+✔ Write content to marketing/twitter.md                                                                                                   
+✔ Add Twitter marketing materials                                                                                                         
+✔ Write content to marketing/blog_post.md                                                                                                 
+✔ Add blog post marketing material                                                                                                        
+✔ Write content to marketing/newsletter.md                                                                                                
+✔ Add newsletter marketing material                                                                                                       
+✔ Write content to marketing/hackernews.md                                                                                                
+✔ Add HackerNews marketing material                                                                                                       
+✔ Write content to marketing/linkedin.md                                                                                                  
+✔ Add LinkedIn marketing material                                                                                                         
+! Connection was interrupted, reconnecting...                                                                                             
+✔ Write content to marketing/devto.md                                                                                                     
+✔ Add Dev.to marketing material                                                                                                           
+✔ Write content to marketing/producthunt.md                                                                                               
+✔ Add Product Hunt marketing material                                                                                                     
+✔ Push branch create-tailored                                                                                                             
+                                
+  Marketing materials created.  
+                                           
+```
+
+You can adjust the the prompt in `prompts/marketing-materials.md.jinja2` to customize the marketing materials generated.
+
+
+### 📊 Monitor & Evaluate
 Now that your app is live, you'll want to know more about how users are interacting with it.
-Vercel provides analytics and insights to help you understand your users better.
-Just [enable Analytics](https://vercel.com/d?to=%2F%5Bteam%5D%2F%5Bproject%5D%2Fanalytics&title=Open+Web+Analytics) 
+Vercel provides **analytics and insights to help you understand your users** better.
+Just [enable Analytics](https://vercel.com/d?to=%2F%5Bteam%5D%2F%5Bproject%5D%2Fanalytics&title=Open+Web+Analytics)
 in your dashboard to get started.
 
 ![Vercel Analytics Screenshot](analytics_screenshot.png)
 ![Vercel Analytics Screenshot](analytics_screenshot2.png)
-
-### 🚀 Grow & Monetize
-TODO: Let PR Pilot generate texts for product hunt, etc
 
 ## 🧰 Technologies Used
 We chose the following technologies for this project:
@@ -148,6 +185,7 @@ This stack was chosen with the following goals in mind:
 ├── templates/              # Directory for Jinja2 templates
 │   ├── base.html.jinja2    # Base template
 │   └── index.html.jinja2   # Index template
+├── prompts/                # Pre-defined prompts for PR Pilot (Use 'pilot run' to execute)
 ├── docker-compose.yml      # Docker Compose configuration file
 ├── Dockerfile              # Dockerfile for building the app's container image
 ├── requirements.txt        # Python dependencies

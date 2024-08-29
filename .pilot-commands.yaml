@@ -1,15 +1,43 @@
 commands:
-- description: Define project scope and initial code
-  name: initialize
-  params:
-    cheap: false
-    code: false
-    debug: false
-    direct: false
-    file: prompts/initialize.md.jinja2
-    model: gpt-4o
-    snap: false
-    spinner: true
-    sync: true
-    verbose: true
-    wait: true
+  - description: Define project scope and initial code
+    name: initialize
+    params:
+      cheap: false
+      code: false
+      debug: false
+      direct: false
+      file: prompts/initialize.md.jinja2
+      model: gpt-4o
+      snap: false
+      spinner: true
+      sync: true
+      verbose: true
+      wait: true
+  - description: Generate PR Title & Description
+    name: pr-description
+    params:
+      cheap: false
+      code: false
+      debug: false
+      direct: false
+      file: prompts/generate-pr-description.md.jinja2
+      model: gpt-4o
+      snap: false
+      spinner: false
+      sync: false
+      verbose: false
+      wait: true
+  - description: Create marketing materials for different platforms
+    name: marketing-materials
+    params:
+      cheap: false
+      code: false
+      debug: false
+      direct: false
+      file: prompts/marketing-materials.md.jinja2
+      model: gpt-4o
+      snap: false
+      spinner: true
+      sync: true
+      verbose: true
+      wait: true
