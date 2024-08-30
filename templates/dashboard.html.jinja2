@@ -1,40 +1,44 @@
 {% extends "base.html.jinja2" %}
 
-{% block title %}Dashboard{% endblock %}
-
 {% block content %}
 <section class="section">
-    <div class="container">
-        <h1 class="title">Dashboard</h1>
-        <h2 class="subtitle">Overview of the project status and metrics</h2>
-        <div class="columns">
-            <div class="column">
-                <div class="box">
-                    <h3 class="title is-4">Metric 1</h3>
-                    <p>Details about metric 1...</p>
-                </div>
-            </div>
-            <div class="column">
-                <div class="box">
-                    <h3 class="title is-4">Metric 2</h3>
-                    <p>Details about metric 2...</p>
-                </div>
-            </div>
-        </div>
-        <div class="columns">
-            <div class="column">
-                <div class="box">
-                    <h3 class="title is-4">Metric 3</h3>
-                    <p>Details about metric 3...</p>
-                </div>
-            </div>
-            <div class="column">
-                <div class="box">
-                    <h3 class="title is-4">Metric 4</h3>
-                    <p>Details about metric 4...</p>
-                </div>
-            </div>
-        </div>
+  <div class="container">
+    <h1 class="title">Rapid Prototyper Dashboard</h1>
+    <h2 class="subtitle">Overview of the Project</h2>
+
+    <div class="content">
+      <h3>Quick Overview</h3>
+      <p>This project enables AI-assisted rapid prototyping of web applications, allowing developers to explore and iterate on ideas quickly to evaluate their potential for success.</p>
     </div>
+
+    <div class="content">
+      <h3>Structure and Navigation</h3>
+      <p>
+        <strong>Main Directory:</strong>
+        <ul>
+          <li><code>app.py</code>: The main FastAPI application.</li>
+          <li><code>templates/</code>: Directory for Jinja2 templates.</li>
+          <li><code>prompts/</code>: Pre-defined prompts for PR Pilot.</li>
+          <li><code>docker-compose.yml</code>: Docker Compose configuration file.</li>
+          <li><code>Dockerfile</code>: Dockerfile for building the app's container image.</li>
+          <li><code>requirements.txt</code>: Python dependencies.</li>
+          <li><code>LICENSE</code>: License file.</li>
+          <li><code>README.md</code>: Project README file.</li>
+        </ul>
+      </p>
+    </div>
+
+    <div class="content">
+      <h3>Tech Stack</h3>
+      <p>
+        <ul>
+          <li><strong>FastAPI</strong>: A modern, fast (high-performance), web framework for building APIs with Python 3.8+.</li>
+          <li><strong>Jinja2</strong>: A full-featured template engine for Python, used for rendering HTML templates.</li>
+          <li><strong>BulmaCSS</strong>: A modern CSS framework based on Flexbox (via CDN).</li>
+          <li><strong>jQuery</strong>: A fast, small, and feature-rich JavaScript library (via CDN).</li>
+        </ul>
+      </p>
+    </div>
+  </div>
 </section>
 {% endblock %}
