@@ -13,7 +13,7 @@
     how: How the code should be refactored
   instructions: |
     Refactor the code by doing the following:
-    1. Identify the code that needs to be refactored
-    2. Read the necessary files to understand the code
-    3. Adjust the relevant files as necessary
+    1. Read all files in `templates`, `app.py` and `vercel.json`
+    2. Understand the how their content needs to change to meet the new requirements
+    3. Identify if new files need to be created. If so, create them
     IMPORTANT: Only read and write files, do nothing else.
