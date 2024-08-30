@@ -168,7 +168,6 @@ We chose the following technologies for this project:
 - **Jinja2**: A full-featured template engine for Python, used for rendering HTML templates.
 - **BulmaCSS**: A modern CSS framework based on Flexbox (via CDN).
 - **jQuery**: A fast, small, and feature-rich JavaScript library (via CDN).
-- **MongoDB**: A schema-less DB for storing data.
 
 This stack was chosen with the following goals in mind:
 - **Speed**: We chose technologies that allow for rapid development and iteration.
