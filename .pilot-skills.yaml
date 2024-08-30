@@ -7,13 +7,3 @@
     1. Read `templates/index.html.jinja2` to understand how templates are used in this project
     2. Create a new Jinja template in the `templates` directory, implementing the new page
     3. Add the new endpoint in the backend, rendering the jinja template
-- title: Refactor the code
-  args:
-    why: Why the code needs to be refactored
-    how: How the code should be refactored
-  instructions: |
-    Refactor the code by doing the following:
-    1. Read all files in `templates`, `app.py` and `vercel.json`
-    2. Understand the how their content needs to change to meet the new requirements
-    3. Identify if new files need to be created. If so, create them
-    IMPORTANT: Only read and write files, do nothing else.
