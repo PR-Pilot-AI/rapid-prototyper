@@ -12,6 +12,8 @@ services:
       - db
     environment:
       POSTGRES_URL: postgresql://user:password@db:5432/mydatabase
+    command: >
+      sh -c "alembic upgrade head && uvicorn app.main:app --host 0.0.0.0 --port 80 --reload"
   db:
     image: postgres:latest
     environment:
