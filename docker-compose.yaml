@@ -8,6 +8,10 @@ services:
       - .:/app
     ports:
       - "8000:80"
+    depends_on:
+      - db
+    environment:
+      POSTGRES_URL: postgresql://user:password@db:5432/mydatabase
   db:
     image: postgres:latest
     environment:
