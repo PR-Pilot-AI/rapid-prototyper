@@ -8,3 +8,17 @@ services:
       - .:/app
     ports:
       - "8000:80"
+    depends_on:
+      - db
+    environment:
+      POSTGRES_URL: postgresql://user:password@db:5432/mydatabase
+    command: >
+      sh -c "alembic upgrade head && uvicorn app.main:app --host 0.0.0.0 --port 80 --reload"
+  db:
+    image: postgres:latest
+    environment:
+      POSTGRES_USER: user
+      POSTGRES_PASSWORD: password
+      POSTGRES_DB: mydatabase
+    ports:
+      - "5432:5432"
