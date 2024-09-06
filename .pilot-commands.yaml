@@ -25,7 +25,7 @@ commands:
       snap: false
       spinner: false
       sync: false
-      verbose: false
+      verbose: true
       wait: true
   - description: Create marketing materials for different platforms
     name: marketing-materials
